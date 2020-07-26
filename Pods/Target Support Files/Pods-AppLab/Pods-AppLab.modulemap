@@ -1,0 +1,6 @@
+framework module Pods_AppLab {
+  umbrella header "Pods-AppLab-umbrella.h"
+
+  export *
+  module * { export * }
+}
