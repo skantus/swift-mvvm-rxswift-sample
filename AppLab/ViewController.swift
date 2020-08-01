@@ -31,7 +31,9 @@ class ViewController: UIViewController {
         navigationItem.setRightBarButton(fetchBarButtonItem, animated: false)
     }
     
-    @objc fileprivate func leftBarButtonItemTapped() {}
+    @objc fileprivate func leftBarButtonItemTapped() {
+        self.navigationController?.pushViewController(HomeView(), animated: true)
+    }
     
     @objc fileprivate func rightBarButtonItemTapped() {
         self.navigationController?.pushViewController(ListViewController(), animated: true)

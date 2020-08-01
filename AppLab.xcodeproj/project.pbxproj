@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		073F10C534287B5EDBEFA69B /* Pods_AppLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F93685D8BE6C6634A5535C0 /* Pods_AppLab.framework */; };
+		A1117D8D24D0C7CD00A879A9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1117D8C24D0C7CD00A879A9 /* HomeRouter.swift */; };
+		A1117D8F24D2228000A879A9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1117D8E24D2228000A879A9 /* HomeView.swift */; };
+		A1117D9224D2274200A879A9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1117D9124D2274200A879A9 /* HomeViewModel.swift */; };
 		A15808DD24C47F0900DC3965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15808DC24C47F0900DC3965 /* AppDelegate.swift */; };
 		A15808DF24C47F0900DC3965 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15808DE24C47F0900DC3965 /* SceneDelegate.swift */; };
 		A15808E124C47F0900DC3965 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15808E024C47F0900DC3965 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		031833719692D85D271B4A31 /* Pods-AppLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLab.release.xcconfig"; path = "Target Support Files/Pods-AppLab/Pods-AppLab.release.xcconfig"; sourceTree = "<group>"; };
 		6F93685D8BE6C6634A5535C0 /* Pods_AppLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1117D8C24D0C7CD00A879A9 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		A1117D8E24D2228000A879A9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A1117D9124D2274200A879A9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A15808D924C47F0900DC3965 /* AppLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15808DC24C47F0900DC3965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15808DE24C47F0900DC3965 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,47 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A1117D8824D0C65D00A879A9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1117D9024D2272D00A879A9 /* Model */,
+				A1117D8A24D0C6A900A879A9 /* View */,
+				A1117D8B24D0C6AE00A879A9 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1117D8924D0C68800A879A9 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		A1117D8A24D0C6A900A879A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1117D8E24D2228000A879A9 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1117D8B24D0C6AE00A879A9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A1117D8C24D0C7CD00A879A9 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A1117D9024D2272D00A879A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1117D9124D2274200A879A9 /* HomeViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A15808D024C47F0900DC3965 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +142,8 @@
 				A15808DC24C47F0900DC3965 /* AppDelegate.swift */,
 				A15808DE24C47F0900DC3965 /* SceneDelegate.swift */,
 				A1F26FBC24CD8E24006BAC51 /* List */,
+				A1117D8824D0C65D00A879A9 /* Home */,
+				A1117D8924D0C68800A879A9 /* DetailView */,
 				A15808E024C47F0900DC3965 /* ViewController.swift */,
 				A15808E524C47F0C00DC3965 /* Assets.xcassets */,
 				A15808E724C47F0C00DC3965 /* LaunchScreen.storyboard */,
@@ -244,9 +293,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15808E124C47F0900DC3965 /* ViewController.swift in Sources */,
+				A1117D9224D2274200A879A9 /* HomeViewModel.swift in Sources */,
 				A15808DD24C47F0900DC3965 /* AppDelegate.swift in Sources */,
+				A1117D8D24D0C7CD00A879A9 /* HomeRouter.swift in Sources */,
 				A17FD05724D0BAA800AFEC7A /* ListController.swift in Sources */,
 				A15808DF24C47F0900DC3965 /* SceneDelegate.swift in Sources */,
+				A1117D8F24D2228000A879A9 /* HomeView.swift in Sources */,
 				A1F26FBE24CD8F1F006BAC51 /* List.swift in Sources */,
 				A1F26FC224CD9256006BAC51 /* ViewModelList.swift in Sources */,
 			);

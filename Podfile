@@ -8,6 +8,5 @@ target 'AppLab' do
   # Pods for AppLab
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'TinyConstraints'
 
 end
