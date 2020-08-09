@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		073F10C534287B5EDBEFA69B /* Pods_AppLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F93685D8BE6C6634A5535C0 /* Pods_AppLab.framework */; };
+		A101412924DD8E3800DD40A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101412824DD8E3800DD40A9 /* Constants.swift */; };
+		A101412C24DD9A0900DD40A9 /* ManagerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101412B24DD9A0900DD40A9 /* ManagerConnection.swift */; };
+		A101412E24DD9B2600DD40A9 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101412D24DD9B2600DD40A9 /* Movies.swift */; };
+		A10CE16424DF67FB00198EA0 /* CustomeMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10CE16324DF67FB00198EA0 /* CustomeMovieCell.swift */; };
+		A10CE16724DF709E00198EA0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10CE16624DF709E00198EA0 /* Extensions.swift */; };
 		A1117D8D24D0C7CD00A879A9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1117D8C24D0C7CD00A879A9 /* HomeRouter.swift */; };
 		A1117D8F24D2228000A879A9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1117D8E24D2228000A879A9 /* HomeView.swift */; };
 		A1117D9224D2274200A879A9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1117D9124D2274200A879A9 /* HomeViewModel.swift */; };
@@ -24,6 +29,11 @@
 /* Begin PBXFileReference section */
 		031833719692D85D271B4A31 /* Pods-AppLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLab.release.xcconfig"; path = "Target Support Files/Pods-AppLab/Pods-AppLab.release.xcconfig"; sourceTree = "<group>"; };
 		6F93685D8BE6C6634A5535C0 /* Pods_AppLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A101412824DD8E3800DD40A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A101412B24DD9A0900DD40A9 /* ManagerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerConnection.swift; sourceTree = "<group>"; };
+		A101412D24DD9B2600DD40A9 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		A10CE16324DF67FB00198EA0 /* CustomeMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeMovieCell.swift; sourceTree = "<group>"; };
+		A10CE16624DF709E00198EA0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A1117D8C24D0C7CD00A879A9 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		A1117D8E24D2228000A879A9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A1117D9124D2274200A879A9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -69,6 +79,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A101412A24DD99C900DD40A9 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A101412B24DD9A0900DD40A9 /* ManagerConnection.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		A10CE16524DF706C00198EA0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A10CE16624DF709E00198EA0 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A1117D8724D0C4DB00A879A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				A1117D8E24D2228000A879A9 /* HomeView.swift */,
+				A10CE16324DF67FB00198EA0 /* CustomeMovieCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A1117D9124D2274200A879A9 /* HomeViewModel.swift */,
+				A101412D24DD9B2600DD40A9 /* Movies.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,12 +172,23 @@
 				A1F26FBC24CD8E24006BAC51 /* List */,
 				A1117D8824D0C65D00A879A9 /* Home */,
 				A1117D8924D0C68800A879A9 /* DetailView */,
+				A1E46FE024D5ACBC00156354 /* Resources */,
+				A101412A24DD99C900DD40A9 /* NetworkManager */,
 				A15808E024C47F0900DC3965 /* ViewController.swift */,
-				A15808E524C47F0C00DC3965 /* Assets.xcassets */,
 				A15808E724C47F0C00DC3965 /* LaunchScreen.storyboard */,
 				A15808EA24C47F0C00DC3965 /* Info.plist */,
+				A15808E524C47F0C00DC3965 /* Assets.xcassets */,
 			);
 			path = AppLab;
+			sourceTree = "<group>";
+		};
+		A1E46FE024D5ACBC00156354 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A10CE16524DF706C00198EA0 /* Extensions */,
+				A101412824DD8E3800DD40A9 /* Constants.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A1F26FB924CD8DA7006BAC51 /* Model */ = {
@@ -294,13 +333,18 @@
 			files = (
 				A15808E124C47F0900DC3965 /* ViewController.swift in Sources */,
 				A1117D9224D2274200A879A9 /* HomeViewModel.swift in Sources */,
+				A101412E24DD9B2600DD40A9 /* Movies.swift in Sources */,
 				A15808DD24C47F0900DC3965 /* AppDelegate.swift in Sources */,
 				A1117D8D24D0C7CD00A879A9 /* HomeRouter.swift in Sources */,
 				A17FD05724D0BAA800AFEC7A /* ListController.swift in Sources */,
+				A10CE16424DF67FB00198EA0 /* CustomeMovieCell.swift in Sources */,
+				A101412924DD8E3800DD40A9 /* Constants.swift in Sources */,
 				A15808DF24C47F0900DC3965 /* SceneDelegate.swift in Sources */,
 				A1117D8F24D2228000A879A9 /* HomeView.swift in Sources */,
 				A1F26FBE24CD8F1F006BAC51 /* List.swift in Sources */,
 				A1F26FC224CD9256006BAC51 /* ViewModelList.swift in Sources */,
+				A101412C24DD9A0900DD40A9 /* ManagerConnection.swift in Sources */,
+				A10CE16724DF709E00198EA0 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,25 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    lazy var activityIndicator: UIActivityIndicatorView = {
-        let view = UIActivityIndicatorView(style: .medium)
-        return view
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
         setupNavigation()
-        setupViews()
     }
     
     fileprivate func setupNavigation() {
-        let resetBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(leftBarButtonItemTapped))
+        let leftBarButtonItem = UIBarButtonItem(title: "Movies", style: .plain, target: self, action: #selector(leftBarButtonItemTapped))
         
-        let fetchBarButtonItem = UIBarButtonItem(title: "List", style: .plain, target: self, action: #selector(rightBarButtonItemTapped))
+        let rightBarButtonItem = UIBarButtonItem(title: "List", style: .plain, target: self, action: #selector(rightBarButtonItemTapped))
         
-        navigationItem.setLeftBarButton(resetBarButtonItem, animated: false)
-        navigationItem.setRightBarButton(fetchBarButtonItem, animated: false)
+        navigationItem.setLeftBarButton(leftBarButtonItem, animated: false)
+        navigationItem.setRightBarButton(rightBarButtonItem, animated: false)
     }
     
     @objc fileprivate func leftBarButtonItemTapped() {
@@ -37,10 +31,5 @@ class ViewController: UIViewController {
     
     @objc fileprivate func rightBarButtonItemTapped() {
         self.navigationController?.pushViewController(ListViewController(), animated: true)
-    }
-    
-    fileprivate func setupViews() {
-        view.addSubview(activityIndicator)
-        view.backgroundColor = .white
     }
 }

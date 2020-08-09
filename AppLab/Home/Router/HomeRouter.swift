@@ -11,15 +11,15 @@ import UIKit
 
 class HomeRouter {
     
+    private var sourceView: UIViewController?
+    
     var viewController: UIViewController {
         return createViewController()
     }
     
-    private var sourceView: UIViewController?
-    
     private func createViewController() -> UIViewController {
-        let viewC = HomeView();
-        return viewC
+        let homeView = HomeView();
+        return homeView
     }
     
     func setSourceView(sourceView: UIViewController?) {
