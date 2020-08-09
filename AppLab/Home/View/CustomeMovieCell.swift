@@ -49,16 +49,9 @@ class CustomeMovieCell: UICollectionViewCell {
         addSubview(descriptionLabel)
         
         titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        // titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 5).isActive = true
-        // titleLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        // titleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        
+    
         imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         imageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5).isActive = true
-        // imageView.topAnchor.constraint(equalTo: textLabel.bottomAnchor, constant: 5).isActive = true;
-        // imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        // imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        // imageView.widthAnchor.constraint(equalToConstant: self.bounds.width).isActive = true
         
         descriptionLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         descriptionLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 5).isActive = true

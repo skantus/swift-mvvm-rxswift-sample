@@ -23,8 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the UIWindow variable use above UIWindowScene variable
         self.window = UIWindow(windowScene: windowScene)
 
-        let viewController = HomeRouter().viewController
-        // let viewController = ViewController()
+        // let viewController = HomeRouter().viewController
+        let viewController = ViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
         
         // Create a ViewController object and set it as the scene's window's root view controller
